@@ -9,7 +9,7 @@ try {
     await mongoose.connect(MONGO_DB_URI)
     console.log("db connected successfully!!")
 } catch (error) {
-    console.log(error)
+    console.log(error.message)
     process.exit(1);
 }
 }
